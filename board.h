@@ -1,12 +1,11 @@
 #ifndef BOARD_H
 #define BOARD_H
-#include <vector>
+#include <iostream>
 
 class Board {
     private:
         int boardSize;
-        int numOfFlows;
-        std::vector<std::vector<char>> board;
+        char** board;
     
     public:
         Board(int size);
@@ -18,4 +17,4 @@ class Board {
         */
 };
 
-#endif
+#endif //BOARD_H
