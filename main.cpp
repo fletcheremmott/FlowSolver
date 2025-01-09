@@ -7,7 +7,8 @@ int main()
     int size;
     cout << "Enter the size of the board: ";
     cin >> size;
-    Board gameBoard(size);
+    Board gameBoard(size, size);
+    gameBoard.displayBoard();
     /*
         ask for input board
         load input board into char [][]
