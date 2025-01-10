@@ -5,10 +5,17 @@ using namespace std;
 int main()
 {
     int size;
+    int numFlows;
+
     cout << "Enter the size of the board: ";
     cin >> size;
-    Board gameBoard(size, size);
+    cout << "Enter the number of flows: ";
+    cin >> numFlows;
+    Board gameBoard(size, size, numFlows);
+
+    gameBoard.addFlows();
     gameBoard.displayBoard();
+
     /*
         ask for input board
         load input board into char [][]
