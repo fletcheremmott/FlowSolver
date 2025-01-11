@@ -34,7 +34,8 @@ void Board::addFlows() {
     int point2x;
     int point2y;
     int countASCII = 65;
-    cout << "Enter each flow as a pair of points with x and y inputted individually." << endl;
+    if (flows > 0)
+        cout << "Enter each flow as a pair of points with x and y inputted individually." << endl;
 
     for (int i = 0; i < flows; i++) {
         cout << "Flow " << i+1 << endl;
@@ -52,5 +53,13 @@ void Board::addFlows() {
         board[point1y][point1x] = character;
         board[point2y][point2x] = character;
         countASCII++;
+    }
+}
+
+void Board::clearBoard() {
+    for (int i = 0; i < board.size(); i++) {
+        for (int j = 0; j < board[i].size(); j++) {
+            board[i][j] = ' ';
+        }
     }
 }

@@ -15,7 +15,7 @@ int main()
 
     gameBoard.addFlows();
     gameBoard.displayBoard();
-
+    
     /*
         ask for input board
         load input board into char [][]
