@@ -16,9 +16,8 @@ class Board {
         void displayBoard() const;
         void addFlows();
         void clearBoard();
-
-        //void printAdjacencyMatrix();
-        //void computeOddDegreeVertices(int* oddVertices, int& oddCount);
+        //void solveBoard();
+        bool isFull();
         
 };
 
