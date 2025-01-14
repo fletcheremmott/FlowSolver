@@ -17,7 +17,7 @@ class Board {
         void addFlows();
         void clearBoard();
         //void solveBoard();
-        bool isFull();
+        bool isFull() const;
         
 };
 
